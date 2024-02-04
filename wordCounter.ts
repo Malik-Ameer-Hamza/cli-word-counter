@@ -36,7 +36,7 @@ let wordsAndLettersCounter = async (para: string): Promise<void> => {
 
     let spinner = createSpinner("counting...").start();
     await wait();
-    spinner.success();
+    spinner.success({text : "Counting completed successfully!"});
     
     console.log(`Total Words : ${words.length}`);
     console.log(`Total Letters : ${letters.length}`);
